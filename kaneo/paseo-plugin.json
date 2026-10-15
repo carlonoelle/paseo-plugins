@@ -1,0 +1,9 @@
+{
+  "id": "kaneo",
+  "name": "Kaneo",
+  "description": "Browse your Kaneo tickets and start an agent on one in a new worktree workspace.",
+  "media": [],
+  "requirements": {
+    "paseo": ">=0.11.2"
+  }
+}

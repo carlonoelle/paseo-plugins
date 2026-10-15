@@ -32,5 +32,9 @@ export function readableMarkdown(markdown: string): string {
   return markdown
     .replace(/!\[([^\]]*)\]\([^)]*\)/g, (_, alt: string) => `[image${alt ? `: ${alt}` : ""}]`)
     .replace(/<img\b[^>]*>/gi, "[image]")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/(\*\*|__)(.+?)\1/g, "$2")
+    .replace(/(^|[^\w*])\*(?!\s)([^*\n]+?)\*(?!\w)/g, "$1$2")
+    .replace(/`([^`\n]+)`/g, "$1")
     .trim();
 }

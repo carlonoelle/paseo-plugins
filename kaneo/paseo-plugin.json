@@ -2,8 +2,13 @@
   "id": "kaneo",
   "name": "Kaneo",
   "description": "Browse your Kaneo tickets and start an agent on one in a new worktree workspace.",
-  "media": [],
+  "media": [
+    "assets/start-work.png",
+    "assets/tickets.png",
+    "assets/mobile.png"
+  ],
   "requirements": {
     "paseo": ">=0.11.2"
-  }
+  },
+  "icon": "assets/icon.png"
 }

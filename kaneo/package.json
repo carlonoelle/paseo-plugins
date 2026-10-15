@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "files": [
-    "paseo-plugin.json",
     "OVERVIEW.md",
+    "assets/",
+    "client/",
     "index.client.tsx",
     "index.server.ts",
-    "client/",
+    "paseo-plugin.json",
     "server/",
     "shared/"
   ],
